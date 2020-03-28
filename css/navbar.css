@@ -1,0 +1,42 @@
+.nav {
+  padding: 20px 50px;
+  position: fixed; /*포지션 픽스드에는 위ㅅ드값과 헤잇트값 필요하다 아니면 사라짐*/
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  bottom: 0px; /*10픽셀을 뗸 맨아래에 둔다는거. 위에 두고싶으면 top*/
+  left: 0;
+  border-top: 1px solid darkgoldenrod;
+  font-size: 20px;
+  animation: showNav 0.3s ease-out;
+}
+@keyframes showNav {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav__list-limk {
+  position: relative;
+}
+.nav .nav__badge {
+  font-size: 15px;
+  position: absolute;
+  top: -3px;
+  right: -10px;
+  color: aliceblue;
+  background-color: chocolate;
+  width: 18px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

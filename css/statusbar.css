@@ -1,0 +1,21 @@
+.status-bar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  background-color: rgba(153, 189, 245, 0.479);
+  color: peru;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8; /*투명도*/
+}
+.status-bar i {
+  /*스타투스바 클래스의 i태그를 말하는것이다*/
+  font-size: 14px;
+}
+.status-bar .status-bar__battert-per {
+  margin-left: 4px;
+}
+.status-bar .status-bar__column {
+  margin: 10px;
+}

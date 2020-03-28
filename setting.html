@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Settings | Kakao Clone</title>
+    <!--아이콘을 import 하기 위한 주소-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css"
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <!--카카오 페이지 맨 위의 첫번째 컬럼(시간)-->
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <div class="status-bar__column">
+        <!--카카오 페이지 맨 위의 두번째 컬럼(시계 등)-->
+        <i class="far fa-clock"></i>
+        <i class="fab fa-bluetooth-b"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battert-per">32%</span>
+        <i class="fas fa-battery-quarter"></i>
+      </div>
+    </div>
+    <header class="header">
+      <!--시맨틱구조(meaning-->
+      <div class="header__header-column">
+        <a href="more.html"><i class="fas fa-arrow-left fa-2x"></i></a>
+
+        <h1 class="header__title">SETTINGS</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon"> <i class="fas fa-search"></i></span>
+      </div>
+    </header>
+    <main class="settings">
+      <section class="settings__section">
+        <ul class="settings__list">
+          <li class="settings__setting">
+            <span class="settings__icons"
+              ><i class="fas fa-microphone "></i
+            ></span>
+            <span class="settings__title">Notices</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icons"><i class="fas fa-flask "></i></span>
+            <span class="settings__title">Kakao Lab</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icons"
+              ><i class="fas fa-info-circle"></i
+            ></span>
+            <span class="settings__title">Version</span>
+          </li>
+        </ul>
+      </section>
+      <section class="settings__section">
+        <ul class="settings__list">
+          <li class="settings__setting">
+            <span class="settings__icons"><i class="fas fa-lock"></i> </span>
+            <span class="settings__title">Privacy</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icons">
+              <i class="far fa-bell"></i>
+            </span>
+            <span class="settings__title">Notifications</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icons">
+              <i class="far fa-user"></i>
+            </span>
+            <span class="settings__title">Friends</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <div class="bigScreen">
+      <span class="bigScreen-text">
+        <i class="fas fa-exclamation-triangle fa-3x"></i><br />
+        Plz make screen SMALL!
+      </span>
+    </div>
+  </body>
+</html>

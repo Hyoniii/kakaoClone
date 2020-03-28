@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat | Kakao Clone</title>
+    <!--아이콘을 import 하기 위한 주소-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="chats-body">
+  <div class="header-wrapper">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <!--카카오 페이지 맨 위의 첫번째 컬럼(시간)-->
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <div class="status-bar__column">
+        <!--카카오 페이지 맨 위의 두번째 컬럼(시계 등)-->
+        <i class="far fa-clock"></i>
+        <i class="fab fa-bluetooth-b"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+       <span class="status-bar__battert-per">32%</span>
+       <i class="fas fa-battery-quarter"></i>
+      </div>
+    </div>
+    <header class="header chat-header">
+      <!--시맨틱구조(meaning-->
+      <div class="header__header-column">
+         <a href="index.html" class="header__back-btn"
+           ><i class="fas fa-arrow-left "></i
+         ></a>
+
+         <h1 class="header__title">My Best</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon"> <i class="fas fa-search"></i> </span>
+         <span class="header__icon"><i class="fas fa-bars"></i></span>
+      </div>
+    </header>
+  </div>   
+   
+    <main class="chat-screen">
+      <ul class="chat__message">
+        <span class="chat__timestamp">Thuseday, December, 24</span>
+        <li class="incoming-message message">
+          <img src="snoop2.jpg" class="m-avatar message__avatar" />
+          <div class="m-avatar message__content">
+            <span class="message__author">My Best</span>
+            <span class="message__bubble">Today is Christmas Eve!</span>
+          </span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">Yeah!!!</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="snoop2.jpg" class="m-avatar message__avatar" />
+          <div class="m-avatar message__content">
+            <span class="message__author">My Best</span>
+            <span class="message__bubble">Where are you?</span>
+          </span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">im at home</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="snoop2.jpg" class="m-avatar message__avatar" />
+          <div class="m-avatar message__content">
+            <span class="message__author">My Best</span>
+            <span class="message__bubble">im going to go!!!</span>
+          </span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">come quickly!</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="snoop2.jpg" class="m-avatar message__avatar" />
+          <div class="m-avatar message__content">
+            <span class="message__author">My Best</span>
+            <span class="message__bubble">best Christmas eve ever!!!</span>
+          </span>
+        </li>
+        
+
+
+
+      </ul>
+      
+    </main>
+    <div class="chat__write-container">
+      <input class="chat__write"
+          type="text" 
+          placeholder="Send message"/>
+      
+      <div class="chat__icon-left chat__icon">
+      <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__icon-right chat__icon">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
+    <div class="bigScreen">
+      <span class="bigScreen-text">
+        <i class="fas fa-exclamation-triangle fa-3x"></i><br>
+        Plz make screen SMALL!
+        
+      </span>
+    </div>
+  </body>
+</html>
